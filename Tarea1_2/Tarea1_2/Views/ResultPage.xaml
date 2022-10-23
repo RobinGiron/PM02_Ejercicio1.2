@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea1_2.Views.ResultPage"
+             BackgroundImageSource="backgrudn.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Opacity="0.3" BackgroundColor="BlanchedAlmond" HorizontalTextAlignment="Center" TextColor="Black" Text="NOMBRE" FontSize="Title" Padding="30,10,30,10"/>
+            <Label Text="{Binding nombre}" TextColor="White"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand"/>
+
+            <Label Opacity="0.3" BackgroundColor="BlanchedAlmond" HorizontalTextAlignment="Center" TextColor="Black" Text="APELLIDO" FontSize="Title" Padding="30,10,30,10"/>
+            <Label Text="{Binding apellido}" TextColor="White"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand"/>
+
+            <Label Opacity="0.3" BackgroundColor="BlanchedAlmond" HorizontalTextAlignment="Center" TextColor="Black" Text="EDAD" FontSize="Title" Padding="30,10,30,10"/>
+            <Label Text="{Binding edad}" TextColor="White"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand"/>
+
+            <Label Opacity="0.3" BackgroundColor="BlanchedAlmond" HorizontalTextAlignment="Center" TextColor="Black" Text="CORREO" FontSize="Title" Padding="30,10,30,10"/>
+            <Label Text="{Binding correo}" TextColor="White"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

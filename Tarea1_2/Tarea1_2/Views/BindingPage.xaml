@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea1_2.Views.BindingPage"
+             BackgroundImageSource="backgrudn.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ingreso de Personas"
+                   TextColor="WhiteSmoke"
+                   FontAttributes="Bold"
+                   FontSize="Medium"
+                Margin="30,30"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="NOMBRE:" Margin="10" TextColor="WhiteSmoke"/>
+            <Entry x:Name="txtnom" Margin="10"/>
+
+            <Label Text="APELLIDO:" Margin="10" TextColor="WhiteSmoke"/>
+            <Entry x:Name="txtape" Margin="10"/>
+
+            <Label Text="EDAD:" Margin="10" TextColor="WhiteSmoke"/>
+            <Entry x:Name="txtedad" Keyboard="Numeric" Margin="10"/>
+
+            <Label Text="CORREO ELECTRONICO:" Margin="10" TextColor="WhiteSmoke"/>
+            <Entry x:Name="txtemail" Keyboard="Email" Margin="10"/>
+
+            <Button x:Name="btnenviar" Text="ENVIAR INFOMACION" Clicked="btnenviar_Clicked" 
+                    BackgroundColor="DarkBlue"
+                    CornerRadius="20"
+                    TextColor="WhiteSmoke"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
